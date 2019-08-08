@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-object-msgs</id>
-    <version>0.4.0</version>
-    <title>ros-dashing-object-msgs</title>
-    <authors>Xiaojun Huang <xiaojun.huang@intel.com></authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This package defines messages for NCS inference</description>
-<dependencies>
-      <dependency id="ros-dashing-rosidl-default-runtime"/>
-      <dependency id="ros-dashing-sensor-msgs"/>
-      <dependency id="ros-dashing-std-msgs"/>
-      <dependency id="ros-dashing-ros-workspace"/>
+    <description>@(Description)</description>
+    <dependencies>
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
